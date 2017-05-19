@@ -1,0 +1,57 @@
+.posts
+  font-family: "Helvetica Neue", sans-serif
+  font-weight: normal
+  color: $txt-color
+  background: $white
+  padding-bottom: 103px
+  &__wrap
+    display: flex
+    justify-content: space-between
+    flex-wrap: wrap
+  &__block
+    width: 280px
+    height: auto
+    position: relative
+    border: 10px solid transparent
+    &:hover
+      border: 10px solid $sea-green
+      color: $sea-green
+      .posts__user
+        border-color: $sea-green
+    &::before
+      content: ''
+      display: block
+      position: absolute
+      left: 0
+      width: 1px
+      height: 100%
+      z-index: 5
+      background: #dbe1e7
+  &__img
+    width: 100%
+    height: auto
+    z-index: 10
+  &__user
+    position: absolute
+    top: 29.5%
+    left: 0
+    right: 0
+    margin-left: auto
+    margin-right: auto
+    border-radius: 50%
+    border: 4px solid #f3f3f3
+    z-index: 15
+  &__title
+    font-size: 21px
+    font-weight: normal
+    line-height: 27px
+    padding-top: 24%
+  &__description
+    line-height: 24px
+    font-weight: normal
+    padding: 16px 0 32px 0
+  &__txt-wrap
+    width: 220px
+    height: auto
+    margin: 0 auto
+

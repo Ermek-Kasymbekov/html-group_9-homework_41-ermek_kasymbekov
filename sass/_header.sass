@@ -1,0 +1,45 @@
+.header
+  background: $sea-green
+  position: relative
+  border-bottom: 2px solid #5d615f
+  padding: 27px 0 0 0
+  &::before
+    content: ''
+    width: 50%
+    height: 100%
+    +position(0, auto, auto, 50%)
+    background: $white
+    z-index: 10
+  &__container
+    +clearfix
+.logo
+  margin: 0
+  padding: 20px 0 0
+  &__link
+    text-decoration: none
+    float: left
+    margin: -27px 0 0 0
+  &__img
+    display: block
+.main-nav
+  margin: -56px 0 0 153px
+  padding: 40px 0 25px 14px
+  background: $white
+  position: relative
+  z-index: 20
+  &__list
+    margin: 0
+    padding: 0
+  &__item
+    display: inline-block
+  &__link
+    font-family: 'Sintony', sans-serif
+    font-weight: bold
+    text-transform: uppercase
+    text-decoration: none
+    color: #586165
+    padding: 0 23px
+    &:hover
+      color: $sea-green
+
+
