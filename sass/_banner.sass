@@ -1,12 +1,12 @@
 .banner
   background: url("../img/banner.jpg") 0 0 no-repeat
   height: 722px
-  //height: 100%
   font-family: Sintony, sans-serif
   font-weight: normal
   color: $white
   text-align: center
   margin-bottom: 29px
+  position: relative
   &__title
     text-transform: uppercase
     font-size: 30px
@@ -31,4 +31,15 @@
     background: transparent
     border: 2px solid $white
     border-radius: 4px
-
+  &__triangle
+    display: block
+    width: 35px
+    height: 35px
+    background: $white
+    position: absolute
+    bottom: -17px
+    right: 0
+    left: 0
+    margin-left: auto
+    margin-right: auto
+    transform: rotate(45deg)
